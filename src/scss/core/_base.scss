@@ -166,6 +166,7 @@ p {
   align-items: var(--container-align-items, flex-start);
   justify-content: var(--container-justify-content, flex-start);
   flex-flow: var(--container-flex-flow, column);
+  gap: var(--container-gap, unset);
 
   width: 100%;
   max-width: var(--container-limit, auto);

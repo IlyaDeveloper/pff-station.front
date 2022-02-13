@@ -62,7 +62,7 @@
 
     @include only-mouse {
       &:hover {
-        background: $primary-dark;
+        background: $primary-light;
       }
     }
   }
