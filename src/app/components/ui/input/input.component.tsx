@@ -1,14 +1,15 @@
 import {Component} from "react";
-import './tm.component.scss'
 
-interface Tmrops {
+import './input.component.scss'
+
+interface InputProps {
     children?: React.ReactNode;
     type?: string,
     placeholder: string,
     hostClass?: string,
 }
 
-class InputComponent extends Component<Tmrops> {
+class InputComponent extends Component<InputProps> {
     render() {
         return (
             <div className={'input ' + this.props.hostClass}>

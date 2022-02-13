@@ -1,5 +1,5 @@
 import {Component} from "react";
-import 'heading.component.scss'
+import './heading.component.scss'
 
 interface HeadingProps {
     children?: React.ReactNode;
@@ -21,7 +21,8 @@ class HeadingComponent extends Component<HeadingProps> {
         }
 
         return (
-            <Tag className={'heading ' + this.checkLevel() + this.props.hostClass}>{this.props.children}</Tag>
+            <div>sdsdsd</div>
+            // <Tag className={'heading ' + this.checkLevel() + this.props.hostClass}>{this.props.children}</Tag>
         );
     }
 }

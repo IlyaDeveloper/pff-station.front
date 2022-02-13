@@ -1,13 +1,13 @@
 import {Component} from "react";
-import './tm.component.scss'
+import './step-item.component.scss'
 
-interface Tmrops {
+interface StepItemProps {
     children?: React.ReactNode;
     hostClass?: string,
     step?: number
 }
 
-class StepItemComponent extends Component<Tmrops> {
+class StepItemComponent extends Component<StepItemProps> {
     render() {
         return (
             <div className={'step-item' + this.props.hostClass} dataStep={this.props.step}>

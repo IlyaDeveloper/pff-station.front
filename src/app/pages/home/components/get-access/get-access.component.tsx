@@ -1,8 +1,9 @@
-import './tm.component.scss'
 import HeadingComponent from "../../../../components/ui/heading/heading.component";
 import StepItemComponent from "../../../../components/ui/step-item/step-item.component";
 import InputComponent from "../../../../components/ui/input/input.component";
 import ButtonComponent from "../../../../components/ui/button/button.component";
+
+import './get-access.component.scss'
 
 
 const GetAccessComponent = () => {
