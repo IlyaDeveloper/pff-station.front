@@ -1,5 +1,11 @@
 @import "./../../../../../scss/core/core";
 
 .welcome {
+  @extend %section;
+
+  --container-align-items: center;
+
+  display: flex;
+  align-items: center;
 
 }

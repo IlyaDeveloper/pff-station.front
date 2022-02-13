@@ -13,12 +13,12 @@ class HeaderComponent extends Component<HeaderProps> {
     render() {
         return (
             <header className={'header ' + this.props.hostClass}>
-                <div className="container">
+                <div className="header__wrap">
                     <div className="header__logo"><LogoComponent/></div>
 
                     <div className="header__btns">
                         <ButtonComponent hostClass={'--null'}>Sign in</ButtonComponent>
-                        <ButtonComponent >Sign up</ButtonComponent>
+                        <ButtonComponent>Sign up</ButtonComponent>
                     </div>
                 </div>
             </header>

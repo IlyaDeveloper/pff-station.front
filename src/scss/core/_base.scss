@@ -90,10 +90,10 @@ html {
   }
 
   @media (max-width: 1160px) {
-    font-size: 75%;
+    font-size: 85%;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 540px) {
     font-size: 82%;
   }
 
@@ -114,7 +114,7 @@ body {
   min-height: 100vh;
 
   margin: 0;
-  padding: var(--header-height) 0 0;
+  padding: var(--header-height) 0 var(--get-access-height);
 
   background: var(--main-bg, $light);
 
@@ -166,6 +166,7 @@ p {
   align-items: var(--container-align-items, flex-start);
   justify-content: var(--container-justify-content, flex-start);
   flex-flow: var(--container-flex-flow, column);
+  flex: var(--container-flex, 1 1);;
   gap: var(--container-gap, unset);
 
   width: 100%;

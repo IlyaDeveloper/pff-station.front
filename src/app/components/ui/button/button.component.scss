@@ -29,9 +29,14 @@
     color: $primary;;
   }
 
+  &.--large {
+    min-height: rem(56);
+    padding: 0 rem(24);
+  }
+
   @include only-mouse {
     &:hover {
-      box-shadow: 0 rem(8) rem(16) rgba(21, 25, 34, 0.24);
+      box-shadow: $sh-form-element;
 
       &.--null {
         color: $light;

@@ -50,12 +50,15 @@ $secondary: var(--cl-secondary);
 $tertiary: var(--cl-tertiary);
 
 $light: var(--cl-light);
-
 $dark: var(--cl-dark);
+
+$gray: var(--cl-ligh-gray);
+
 
 //$error: var(--cl-error);
 //$warning: var(--cl-warning);
 //$success: var(--cl-success);
+
 
 $base-color: var(--cl-base);
 $border-color: var(--cl-border);
@@ -81,6 +84,7 @@ $font-family-secondary: 'Public Sans', sans-serif; //'Halenoir Compact';
 // * shadows
 $sh-card: rem(10) rem(4) rem(44) $tertiary;
 $sh-text: rem(0) rem(1) rem(0) $light;
+$sh-form-element: 0 rem(8) rem(16) rgba(21, 25, 34, 0.24);
 
 //* Scrolls
 $scroll-size: var(--scroll-size, rem(5));

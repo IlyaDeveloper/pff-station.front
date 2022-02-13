@@ -8,10 +8,6 @@ import App from './app/app'
 ReactDOM.render(
     <React.StrictMode>
         <App/>
-        <div className="sdsd">
-            
-            <div className="sdsd">sdsd</div>
-        </div>
     </React.StrictMode>,
 
     document.getElementById('root')

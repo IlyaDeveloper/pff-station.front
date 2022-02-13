@@ -1,0 +1,29 @@
+@import "./../../../../../scss/core/core";
+
+.down-steps {
+
+  --container-gap: #{rem(24)};
+  --container-justify-content: space-between;
+  --container-align-items: center;
+
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+
+  width: 100%;
+  min-height: rem(128);
+
+  padding: rem(40) 0 rem(48);
+
+  border-radius: 0 0 rem(80) rem(80);
+
+  background: $light;
+
+  overflow: hidden;
+
+  @include min-wide(phonesLg) {
+    --container-flex-flow: row;
+
+  }
+}

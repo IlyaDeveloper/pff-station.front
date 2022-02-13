@@ -8,21 +8,21 @@ interface HeadingProps {
 }
 
 class HeadingComponent extends Component<HeadingProps> {
+    validH1 = (this.props.headingLevel >= 1) && (this.props.headingLevel <= 6)
 
-    checkLevel(): string {
-        let level = this.props.headingLevel
-        return (level >= 2) && (level <= 6) ? ('--h' + this.props.headingLevel) : null
+    tagClass = () => {
+        return this.validH1 ? ('--h' + this.props.headingLevel) : '';
+    }
+
+    hasClass = () => {
+        return (this.props.hostClass != undefined ? +' ' + this.props.hostClass : '')
     }
 
     render() {
-        const Tag = () => {
-            let level = this.props.headingLevel
-            return (level >= 1) && (level <= 6) ? ('h' + this.props.headingLevel) : 'h1';
-        }
+        let Tag = ((this.validH1) ? ('h' + this.props.headingLevel) : 'h1');
 
         return (
-            <div>sdsdsd</div>
-            // <Tag className={'heading ' + this.checkLevel() + this.props.hostClass}>{this.props.children}</Tag>
+            <Tag className={'heading ' + this.tagClass() + this.hasClass()}>{this.props.children}</Tag>
         );
     }
 }

@@ -5,17 +5,19 @@ import ConnectYourWalletComponent from "./components/connect-your-wallet/connect
 import OwnWebsiteComponent from "./components/own-website/own-website.component";
 import DesignUploadComponent from "./components/design-upload/design-upload.component";
 import WelcomeComponent from "./components/welcome/welcome.component";
+import DownSteps from "./components/down-steps/down-steps.component";
 
-const HomeComponent = () =>{
-        return (
-            <div>
-                <WelcomeComponent/>
-                <DesignUploadComponent/>
-                <ConnectYourWalletComponent/>
-                <OwnWebsiteComponent/>
-                <GetAccessComponent/>
-            </div>
-        );
+const HomeComponent = () => {
+    return (
+        <div>
+            <WelcomeComponent/>
+            <DesignUploadComponent/>
+            <ConnectYourWalletComponent/>
+            <OwnWebsiteComponent/>
+            <DownSteps/>
+            <GetAccessComponent/>
+        </div>
+    );
 }
 
 export default HomeComponent

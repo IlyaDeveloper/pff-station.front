@@ -8,9 +8,14 @@ interface StepItemProps {
 }
 
 class StepItemComponent extends Component<StepItemProps> {
+
+    hasClass = () => {
+        return (this.props.hostClass != undefined ? +' ' + this.props.hostClass : '')
+    }
+
     render() {
         return (
-            <div className={'step-item' + this.props.hostClass} data-step={this.props.step}>
+            <div className={'step-item' + this.hasClass()} data-step={this.props.step}>
                 <mark className={'step-item__capt'}>{this.props.children}</mark>
             </div>
         );

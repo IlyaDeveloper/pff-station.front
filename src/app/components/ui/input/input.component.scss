@@ -3,28 +3,37 @@
 .input {
   display: inline-flex;
   align-items: center;
+
   min-width: rem(240);
 
 
   &__field {
-    padding: 0 rem(16);
+    width: 100%;
+    min-height: rem(56);
 
-    color: #262628;
+    padding: 0 $contentGutter;
+
+    color: $dark;
     font-size: rem(20);
 
+    border: rem(2) solid $light;
     border-radius: rem(8);
-    background: #FFFFFF;
+    background: $light;
 
-    transition:  $transition-default;
-    transition-property: box-shadow, opacity;
+    transition: $transition-default;
+    transition-property: box-shadow, opacity, border-color;
 
     @include placeholder {
       opacity: 0.56;
     }
 
-    @include only-mouse{
-      &:hover , &:focus {
-        box-shadow: $sh-card;
+    @include only-mouse {
+      &:focus {
+        border-color: $primary;
+      }
+
+      &:hover, &:focus {
+        box-shadow: $sh-form-element;
       }
     }
   }

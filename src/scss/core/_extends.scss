@@ -12,3 +12,15 @@
   animation: var(--glob-animation-prop, show-block) $transition-start-delay $transition-start-duration $transition-function 1 forwards;
   //animation-play-state: $global-animation-state;
 }
+
+%section {
+  position: relative;
+  z-index: 1;
+
+  height: calc(100vh - var(--header-height));
+  min-height: rem(700);
+
+  padding: rem(80) 0;
+
+  background: $light;
+}

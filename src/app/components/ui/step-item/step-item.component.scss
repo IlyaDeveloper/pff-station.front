@@ -2,23 +2,34 @@
 
 .step-item {
   display: inline-flex;
-  grid-gap: rem(16);
+  align-items: center;
 
-  &:before{
+  &:before {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: $contentGutter;
+
     width: rem(40);
     height: rem(40);
 
     content: attr(data-step);
 
-    background: #262628;
-    mix-blend-mode: normal;
-    opacity: 0.06;
+    border-radius: 50%;
+    background: $gray;
   }
 
   &__capt {
     font-size: rem(14);
     line-height: rem(20);
 
-    color: #262628;
+    color: $dark;
+  }
+
+  @include max-wide(phonesLg) {
+    br {
+      display: none;
+    }
   }
 }

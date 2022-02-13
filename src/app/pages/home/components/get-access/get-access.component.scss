@@ -1,24 +1,36 @@
 @import "./../../../../../scss/core/core";
 
 .get-access {
+  --heading-margin: #{0 0 rem(40)};
+  --container-align-items: center;
+  --container-justify-content: center;
+
   position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
 
-  &__top {
-    padding: rem(40) 0 rem(48);
-  }
+  display: flex;
+  flex-flow: column;
+
+  justify-content: center;
+
+  height: var(--get-access-height);
+
+  background: $secondary;
+
 
   &__main {
     display: flex;
     flex-flow: column;
     gap: rem(40);
-
-
   }
 
   &__fieldset {
+    z-index: 100;
+    display: inline-grid;
+    grid-template-columns: 1fr rem(96);
+    gap: rem(16);
 
   }
 }

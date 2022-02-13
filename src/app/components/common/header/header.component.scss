@@ -1,13 +1,10 @@
 @import "../../../../scss/core/core";
 
 .header {
-  --container-align-items: center;
-  --container-justify-content: space-between;
-  --container-flex-flow: row;
-  --container-gap: $contentGutter;
-
-  --button-hover-background: #{$light};
-  --button-hover-color: #{$primary};
+  //--container-align-items: center;
+  //--container-justify-content: space-between;
+  //--container-flex-flow: row;
+  //--container-gap: $contentGutter;
 
   position: fixed;
   top: 0;
@@ -15,24 +12,48 @@
   right: 0;
   z-index: z-index(header);
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
   width: 100%;
   height: var(--header-height);
 
-  padding: rem(20) 0;
+  padding: 0;
 
   color: var(--header-color, $light);
 
+  background: var(--header-background, $light);
 
-  background: var(--header-background, transparent);
+  &__wrap {
+    position: relative;
+
+    width: 100%;
+    max-width: var(--container-limit);
+    height: 100%;
+
+    margin: 0 auto;
+    padding: var(--container-gutter);
+
+
+    &:before {
+      position: absolute;
+      bottom: 0;
+
+      margin: 0 var(--container-gutter);
+
+      content: '';
+
+      border-bottom: rem(1) solid $border-color;
+    }
+  }
 
   &__logo {
   }
 
-  &__btn {
+  &, &__wrap, &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    gap: $contentGutter;
   }
 
   &__menu {
