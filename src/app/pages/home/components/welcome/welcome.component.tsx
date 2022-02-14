@@ -19,7 +19,7 @@ const WelcomeComponent = () => {
         <section className={'welcome'}>
             <div className="container">
 
-                <HeadingComponent>Make and sell your own<br/>Profile Picture NTF</HeadingComponent>
+                <HeadingComponent hostClass={'--h1'}>Make and sell your own<br/>Profile Picture NTF</HeadingComponent>
 
 
                 <p className={'welcome__text'}>No code.&nbsp;&nbsp;No gas fee.&nbsp;&nbsp;For free.</p>

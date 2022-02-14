@@ -1,5 +1,11 @@
 @import "./../../../../../scss/core/core";
 
 .own-website {
+  @extend %section;
 
+  &__left {
+  }
+
+  &__right {
+  }
 }

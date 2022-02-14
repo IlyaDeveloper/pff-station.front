@@ -1,0 +1,80 @@
+$icomoon-font-path: "./../../assets/fonts/icons" !default;
+$icomoon-font-family: "pfp-station-icon" !default;
+
+$pfi-box: "\e904";
+$pfi-cloud: "\e905";
+$pfi-option: "\e906";
+$pfi-group: "\e900";
+$pfi-fox: "\e901";
+$pfi-file: "\e902";
+$pfi-colletion: "\e903";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?3hchaf');
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?3hchaf#iefix') format('embedded-opentype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?3hchaf') format('truetype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?3hchaf') format('woff'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?3hchaf##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="pfi-"], [class*=" pfi-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pfi-box {
+  &:before {
+    content: $pfi-box;
+  }
+}
+
+.pfi-cloud {
+  &:before {
+    content: $pfi-cloud;
+  }
+}
+
+.pfi-option {
+  &:before {
+    content: $pfi-option;
+  }
+}
+
+.pfi-group {
+  &:before {
+    content: $pfi-group;
+  }
+}
+
+.pfi-fox {
+  &:before {
+    content: $pfi-fox;
+  }
+}
+
+.pfi-file {
+  &:before {
+    content: $pfi-file;
+  }
+}
+
+.pfi-colletion {
+  &:before {
+    content: $pfi-colletion;
+  }
+}
+

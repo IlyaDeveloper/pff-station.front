@@ -16,6 +16,24 @@
     letter-spacing: rem(-0.5);
   }
 
+  &.--counter {
+    position: relative;
+    text-align: left;
+
+    &:before {
+      position: absolute;
+      top: rem(-28);
+      left: $containerOffset;
+
+      content: '0' attr(data-count);
+      font-style: italic;
+      font-weight: normal;
+      font-size: rem(14);
+      line-height: rem(20);
+    }
+
+  }
+
   span {
     font-weight: 300;
   }

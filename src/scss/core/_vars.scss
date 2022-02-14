@@ -82,7 +82,7 @@ $font-family-alternative: 'Raleway', 'Segoe UI', Roboto, 'Helvetica Neue', Arial
 $font-family-secondary: 'Public Sans', sans-serif; //'Halenoir Compact';
 
 // * shadows
-$sh-card: rem(10) rem(4) rem(44) $tertiary;
+$sh-card: rem(0) rem(-4) rem(4) rgb(#262628, 0.3);
 $sh-text: rem(0) rem(1) rem(0) $light;
 $sh-form-element: 0 rem(8) rem(16) rgba(21, 25, 34, 0.24);
 
