@@ -1,6 +1,7 @@
-$icomoon-font-path: "./../../assets/fonts/icons" !default;
+$icomoon-font-path: "../../assets/fonts/icons" !default;
 $icomoon-font-family: "pfp-station-icon" !default;
 
+$pfi-star: "\e907";
 $pfi-box: "\e904";
 $pfi-cloud: "\e905";
 $pfi-option: "\e906";
@@ -34,6 +35,12 @@ $pfi-colletion: "\e903";
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.pfi-star {
+  &:before {
+    content: $pfi-star;
+  }
 }
 
 .pfi-box {

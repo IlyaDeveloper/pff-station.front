@@ -1,5 +1,6 @@
 import {Component} from "react";
 import './picture-wrap.component.scss'
+import rightImage from '../../../assets/images/right-img.jpg'
 
 interface PictureWrapProps {
     children?: React.ReactNode;
@@ -11,9 +12,9 @@ class PictureWrapComponent extends Component<PictureWrapProps> {
         return (
             <article className={'picture-wrap'}>
                 <picture>
-                    <img src="assets/img/right-img.jpeg" alt="pfp station"/>
+                    <img src={rightImage} alt="pfp station"/>
                 </picture>
-            </article>    
+            </article>
         );
     }
 }

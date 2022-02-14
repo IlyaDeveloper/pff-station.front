@@ -22,27 +22,27 @@ const WelcomeComponent = () => {
                 <HeadingComponent hostClass={'--h1'}>Make and sell your own<br/>Profile Picture NTF</HeadingComponent>
 
 
-                <p className={'welcome__text'}>No code.&nbsp;&nbsp;No gas fee.&nbsp;&nbsp;For free.</p>
+                {/*<p className={'welcome__text'}>No code.&nbsp;&nbsp;No gas fee.&nbsp;&nbsp;For free.</p>*/}
 
-                <div className="welcome__slider">
-                    <Swiper
-                        spaceBetween={50}
-                        slidesPerView={3}
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}
-                    >
+                {/*<div className="welcome__slider">*/}
+                {/*    <Swiper*/}
+                {/*        spaceBetween={50}*/}
+                {/*        slidesPerView={3}*/}
+                {/*        onSlideChange={() => console.log('slide change')}*/}
+                {/*        onSwiper={(swiper) => console.log(swiper)}*/}
+                {/*    >*/}
 
-                        {images.map(item => {
-                            return (
-                                <SwiperSlide>
-                                    <picture>
-                                        <img src={'assets/images/swiper/' + item.image} alt={item.alt}/>
-                                    </picture>
-                                </SwiperSlide>
-                            )
-                        })}
-                    </Swiper>
-                </div>
+                {/*        {images.map(item => {*/}
+                {/*            return (*/}
+                {/*                <SwiperSlide>*/}
+                {/*                    <picture>*/}
+                {/*                        <img src={'assets/images/swiper/' + item.image} alt={item.alt}/>*/}
+                {/*                    </picture>*/}
+                {/*                </SwiperSlide>*/}
+                {/*            )*/}
+                {/*        })}*/}
+                {/*    </Swiper>*/}
+                {/*</div>*/}
             </div>
         </section>
     );
