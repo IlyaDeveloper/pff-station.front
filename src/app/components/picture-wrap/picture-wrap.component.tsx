@@ -4,7 +4,7 @@ import rightImage from '../../../assets/images/right-img.jpg'
 
 interface PictureWrapProps {
     children?: React.ReactNode;
-    hostClass: string,
+    hostClass?: string,
 }
 
 class PictureWrapComponent extends Component<PictureWrapProps> {

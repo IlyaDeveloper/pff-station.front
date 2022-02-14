@@ -8,4 +8,15 @@
 
   &__right {
   }
+
+  &__list {
+    li{
+      //height: 24;
+      //min-width: rem(24);
+      &:before{
+        //@include pseudo-icon($pfi-star, 24 )
+      }
+
+    }
+  }
 }

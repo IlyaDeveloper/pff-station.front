@@ -4,7 +4,7 @@ import './heading.component.scss'
 interface HeadingProps {
     children?: React.ReactNode;
     headingLevel?: string | number,
-    step?: number,
+    steps?: number,
     hostClass?: string,
 }
 
@@ -30,7 +30,7 @@ class HeadingComponent extends Component<HeadingProps> {
 
         return (
             <Tag className={'heading ' + this.tagClass() + this.hasClass()}
-                 data-count={this.props.step}>
+                 data-count={this.props.steps}>
                 {this.props.children}
             </Tag>
         );

@@ -1,87 +1,47 @@
-$icomoon-font-path: "@/assets/fonts/pfp-font-icons" !default;
-$icomoon-font-family: "pfp-station-icon" !default;
-
-$pfi-star: "\e907";
-$pfi-box: "\e904";
-$pfi-cloud: "\e905";
-$pfi-option: "\e906";
-$pfi-group: "\e900";
-$pfi-fox: "\e901";
-$pfi-file: "\e902";
-$pfi-colletion: "\e903";
-
 @font-face {
-  font-family: '#{$icomoon-font-family}';
-  src: local(#{$icomoon-font-family}), url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?3hchaf');
-  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?3hchaf#iefix') format('embedded-opentype'),
-  url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?3hchaf') format('truetype'),
-  url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?3hchaf') format('woff'),
-  url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?3hchaf##{$icomoon-font-family}') format('svg');
+  font-family: '#{$icon-font-family}';
+  src: url('#{$icon-font-path}/#{$icon-font-family}.eot?k8whxl');
+  src: url('#{$icon-font-path}/#{$icon-font-family}.woff?k8whxl') format('woff'),
+  url('#{$icon-font-path}/#{$icon-font-family}.eot?k8whxl#iefix') format('embedded-opentype'),
+  url('#{$icon-font-path}/#{$icon-font-family}.svg?k8whxl##{$icon-font-family}') format('svg');
+  //src: url('#{$icon-font-path}/#{$icon-font-family}.ttf?k8whxl') format('truetype');
+  font-display: block;
   font-weight: normal;
   font-style: normal;
-  font-display: block;
 }
 
-[class^="pfi-"], [class*=" pfi-"] {
+
+@font-face {
+  font-family: 'Rota regular';
+  src:url('../../assets/fonts/rota/RotaRegular.woff2') format('woff2'),
+  url('../../assets/fonts/rota/RotaRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+[class^='#{$icon-font-prefix}'],
+[class*=' #{$icon-font-prefix}'] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: '#{$icomoon-font-family}' !important;
-  speak: never;
+  font-family: '#{$icon-font-family}' !important;
+  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
 
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.pfi-star {
-  &:before {
-    content: $pfi-star;
+.pfi {
+  @each $icon-name, $name-var in $icons-font-map {
+    &-#{$icon-name}:before {
+      content: $name-var;
+    }
   }
 }
 
-.pfi-box {
-  &:before {
-    content: $pfi-box;
-  }
-}
-
-.pfi-cloud {
-  &:before {
-    content: $pfi-cloud;
-  }
-}
-
-.pfi-option {
-  &:before {
-    content: $pfi-option;
-  }
-}
-
-.pfi-group {
-  &:before {
-    content: $pfi-group;
-  }
-}
-
-.pfi-fox {
-  &:before {
-    content: $pfi-fox;
-  }
-}
-
-.pfi-file {
-  &:before {
-    content: $pfi-file;
-  }
-}
-
-.pfi-colletion {
-  &:before {
-    content: $pfi-colletion;
-  }
-}
 

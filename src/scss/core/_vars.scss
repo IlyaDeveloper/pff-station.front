@@ -76,10 +76,38 @@ $transition-function: cubic-bezier(.2, .63, .59, .84); //cubic-bezier(0,.89,.36,
 $base-font-color: $secondary !default;
 $base-font-size-color: 16px !default;
 
+// * fonts
+$font-path: '../assets/fonts' !default;
+
 //$font-family-primary: 'Montserrat', sans-serif;
 $font-family-primary: 'Rota', sans-serif;
 $font-family-alternative: 'Raleway', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
 $font-family-secondary: 'Public Sans', sans-serif; //'Halenoir Compact';
+
+//* Icons
+$icon-font-family: 'pfp-station-icon' !default;
+$icon-font-prefix: 'pfi-';
+$icon-font-path: $font-path + '/pfp-font-icons' !default;
+
+$pfi-star: "\e907";
+$pfi-box: "\e904";
+$pfi-cloud: "\e905";
+$pfi-option: "\e906";
+$pfi-group: "\e900";
+$pfi-fox: "\e901";
+$pfi-file: "\e902";
+$pfi-colletion: "\e903";
+
+$icons-font-map: (
+    star: $pfi-star,
+    box: $pfi-box,
+    cloud: $pfi-cloud,
+    option: $pfi-option,
+    group: $pfi-group,
+    fox: $pfi-fox,
+    file: $pfi-file,
+    colletion: $pfi-colletion,
+);
 
 // * shadows
 $sh-card: rem(0) rem(-4) rem(4) rgb(#262628, 0.3);
