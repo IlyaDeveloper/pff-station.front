@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'Rota';
-  src: url('../../assets/fonts/Rota-MediumItalic.woff2') format('woff2'),
-  url('../../assets/fonts/Rota-MediumItalic.woff') format('woff');
+  src: local(#{'Rota'}), url('@/assets/fonts/rota/RotaMediumItalic.woff2') format('woff2'),
+  url('@/assets/fonts/rota/RotaMediumItalic.woff') format('woff');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -11,8 +11,8 @@
 
 @font-face {
   font-family: 'Rota';
-  src: url('../../assets/fonts/Rota-Medium.woff2') format('woff2'),
-  url('../../assets/fonts/Rota-Medium.woff') format('woff');
+  src: url('@/assets/fonts/rota/RotaMedium.woff2') format('woff2'),
+  url('@/assets/fonts/rota/RotaMedium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -20,8 +20,8 @@
 
 @font-face {
   font-family: 'Rota';
-  src: url('../../assets/fonts/Rota-SemiBoldItalic.woff2') format('woff2'),
-  url('../../assets/fonts/Rota-SemiBoldItalic.woff') format('woff');
+  src: url('@/assets/fonts/rota/RotaSemiBoldItalic.woff2') format('woff2'),
+  url('@/assets/fonts/rota/RotaSemiBoldItalic.woff') format('woff');
   font-weight: 600;
   font-style: italic;
   font-display: swap;
@@ -29,8 +29,8 @@
 
 @font-face {
   font-family: 'Rota';
-  src: url('../../assets/fonts/Rota-Regular.woff2') format('woff2'),
-  url('../../assets/fonts/Rota-Regular.woff') format('woff');
+  src: url('@/assets/fonts/rota/RotaRegular.woff2') format('woff2'),
+  url('@/assets/fonts/rota/RotaRegular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -38,8 +38,8 @@
 
 @font-face {
   font-family: 'Rota';
-  src: url('../../assets/fonts/Rota-ThinItalic.woff2') format('woff2'),
-  url('../../assets/fonts/Rota-ThinItalic.woff') format('woff');
+  src: url('@/assets/fonts/rota/RotaThinItalic.woff2') format('woff2'),
+  url('@/assets/fonts/rota/RotaThinItalic.woff') format('woff');
   font-weight: 100;
   font-style: italic;
   font-display: swap;
@@ -47,8 +47,8 @@
 
 @font-face {
   font-family: 'Rota';
-  src: url('../../assets/fonts/Rota-Thin.woff2') format('woff2'),
-  url('../../assets/fonts/Rota-Thin.woff') format('woff');
+  src: url('@/assets/fonts/rota/RotaThin.woff2') format('woff2'),
+  url('@/assets/fonts/rota/RotaThin.woff') format('woff');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -56,8 +56,8 @@
 
 @font-face {
   font-family: 'Rota';
-  src: url('../../assets/fonts/Rota-SemiBold.woff2') format('woff2'),
-  url('../../assets/fonts/Rota-SemiBold.woff') format('woff');
+  src: url('@/assets/fonts/rota/RotaSemiBold.woff2') format('woff2'),
+  url('@/assets/fonts/rota/RotaSemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -65,8 +65,8 @@
 
 @font-face {
   font-family: 'Rota';
-  src: url('../../assets/fonts/Rota-LightItalic.woff2') format('woff2'),
-  url('../../assets/fonts/Rota-LightItalic.woff') format('woff');
+  src: url('@/assets/fonts/rota/RotaLightItalic.woff2') format('woff2'),
+  url('@/assets/fonts/rota/RotaLightItalic.woff') format('woff');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -74,8 +74,8 @@
 
 @font-face {
   font-family: 'Rota';
-  src: url('../../assets/fonts/Rota-ExtraBold.woff2') format('woff2'),
-  url('../../assets/fonts/Rota-ExtraBold.woff') format('woff');
+  src: url('@/assets/fonts/rota/RotaExtraBold.woff2') format('woff2'),
+  url('@/assets/fonts/rota/RotaExtraBold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -83,8 +83,8 @@
 
 @font-face {
   font-family: 'Rota';
-  src: url('../../assets/fonts/Rota-ExtraLight.woff2') format('woff2'),
-  url('../../assets/fonts/Rota-ExtraLight.woff') format('woff');
+  src: url('@/assets/fonts/rota/RotaExtraLight.woff2') format('woff2'),
+  url('@/assets/fonts/rota/RotaExtraLight.woff') format('woff');
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -92,8 +92,8 @@
 
 @font-face {
   font-family: 'Rota';
-  src: url('../../assets/fonts/Rota-ExtraBlackItalic.woff2') format('woff2'),
-  url('../../assets/fonts/Rota-ExtraBlackItalic.woff') format('woff');
+  src: url('@/assets/fonts/rota/RotaExtraBlackItalic.woff2') format('woff2'),
+  url('@/assets/fonts/rota/RotaExtraBlackItalic.woff') format('woff');
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -101,8 +101,8 @@
 
 @font-face {
   font-family: 'Rota';
-  src: url('../../assets/fonts/Rota-Black.woff2') format('woff2'),
-  url('../../assets/fonts/Rota-Black.woff') format('woff');
+  src: url('@/assets/fonts/rota/RotaBlack.woff2') format('woff2'),
+  url('@/assets/fonts/rota/RotaBlack.woff') format('woff');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -110,8 +110,8 @@
 
 @font-face {
   font-family: 'Rota';
-  src: url('../../assets/fonts/Rota-Bold.woff2') format('woff2'),
-  url('../../assets/fonts/Rota-Bold.woff') format('woff');
+  src: url('@/assets/fonts/rota/RotaBold.woff2') format('woff2'),
+  url('@/assets/fonts/rota/RotaBold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -119,8 +119,8 @@
 
 @font-face {
   font-family: 'Rota';
-  src: url('../../assets/fonts/Rota-ExtraBoldItalic.woff2') format('woff2'),
-  url('../../assets/fonts/Rota-ExtraBoldItalic.woff') format('woff');
+  src: url('@/assets/fonts/rota/RotaExtraBoldItalic.woff2') format('woff2'),
+  url('@/assets/fonts/rota/RotaExtraBoldItalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -128,8 +128,8 @@
 
 @font-face {
   font-family: 'Rota';
-  src: url('../../assets/fonts/Rota-Light.woff2') format('woff2'),
-  url('../../assets/fonts/Rota-Light.woff') format('woff');
+  src: url('@/assets/fonts/rota/RotaLight.woff2') format('woff2'),
+  url('@/assets/fonts/rota/RotaLight.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -137,8 +137,8 @@
 
 @font-face {
   font-family: 'Rota';
-  src: url('../../assets/fonts/Rota-BlackItalic.woff2') format('woff2'),
-  url('../../assets/fonts/Rota-BlackItalic.woff') format('woff');
+  src: url('@/assets/fonts/rota/RotaBlackItalic.woff2') format('woff2'),
+  url('@/assets/fonts/rota/RotaBlackItalic.woff') format('woff');
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -146,8 +146,8 @@
 
 @font-face {
   font-family: 'Rota';
-  src: url('../../assets/fonts/Rota-BoldItalic.woff2') format('woff2'),
-  url('../../assets/fonts/Rota-BoldItalic.woff') format('woff');
+  src: url('@/assets/fonts/rota/RotaBoldItalic.woff2') format('woff2'),
+  url('@/assets/fonts/rota/RotaBoldItalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -155,8 +155,8 @@
 
 @font-face {
   font-family: 'Rota';
-  src: url('../../assets/fonts/Rota-ExtraLightItalic.woff2') format('woff2'),
-  url('../../assets/fonts/Rota-ExtraLightItalic.woff') format('woff');
+  src: url('@/assets/fonts/rota/RotaExtraLightItalic.woff2') format('woff2'),
+  url('@/assets/fonts/rota/RotaExtraLightItalic.woff') format('woff');
   font-weight: 200;
   font-style: italic;
   font-display: swap;
@@ -164,8 +164,8 @@
 
 @font-face {
   font-family: 'Rota';
-  src: url('../../assets/fonts/Rota-ExtraBlack.woff2') format('woff2'),
-  url('../../assets/fonts/Rota-ExtraBlack.woff') format('woff');
+  src: url('@/assets/fonts/rota/RotaExtraBlack.woff2') format('woff2'),
+  url('@/assets/fonts/rota/RotaExtraBlack.woff') format('woff');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -173,8 +173,8 @@
 
 @font-face {
   font-family: 'Rota';
-  src: url('../../assets/fonts/Rota-Italic.woff2') format('woff2'),
-  url('../../assets/fonts/Rota-Italic.woff') format('woff');
+  src: url('@/assets/fonts/rota/RotaItalic.woff2') format('woff2'),
+  url('@/assets/fonts/rota/RotaItalic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
   font-display: swap;

@@ -1,11 +1,11 @@
 import './design-upload.component.scss';
-import HeadingComponent from "../../../../components/ui/heading/heading.component";
+// import HeadingComponent from "../../../../components/ui/heading/heading.component";
 
 const DesignUploadComponent = () => {
     return (
         <section className={'design-upload'}>
             <div className="container">
-                <HeadingComponent headingLevel={2}></HeadingComponent>
+                {/*<HeadingComponent TagName={'h2'} hostClass={'--h2'}></HeadingComponent>*/}
             </div>
         </section>
     )

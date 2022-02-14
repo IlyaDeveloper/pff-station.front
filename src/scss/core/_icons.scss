@@ -1,4 +1,4 @@
-$icomoon-font-path: "../../assets/fonts/icons" !default;
+$icomoon-font-path: "@/assets/fonts/pfp-font-icons" !default;
 $icomoon-font-family: "pfp-station-icon" !default;
 
 $pfi-star: "\e907";
@@ -12,7 +12,7 @@ $pfi-colletion: "\e903";
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?3hchaf');
+  src: local(#{$icomoon-font-family}), url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?3hchaf');
   src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?3hchaf#iefix') format('embedded-opentype'),
   url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?3hchaf') format('truetype'),
   url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?3hchaf') format('woff'),

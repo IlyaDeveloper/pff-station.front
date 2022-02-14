@@ -10,12 +10,12 @@ import DownSteps from "./components/down-steps/down-steps.component";
 const HomeComponent = () => {
     return (
         <div>
-            <WelcomeComponent/>
-            <DesignUploadComponent/>
-            <ConnectYourWalletComponent/>
-            <OwnWebsiteComponent/>
-            <DownSteps/>
-            <GetAccessComponent/>
+            {/*<WelcomeComponent/>*/}
+            {/*<DesignUploadComponent/>*/}
+            {/*<ConnectYourWalletComponent/>*/}
+            {/*<OwnWebsiteComponent/>*/}
+            {/*<DownSteps/>*/}
+            {/*<GetAccessComponent/>*/}
         </div>
     );
 }

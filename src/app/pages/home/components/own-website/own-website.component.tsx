@@ -19,12 +19,14 @@ const OwnWebsiteComponent = () => {
                     <li>Use your own domain if you want</li>
                     <li>Free website editor</li>
                 </ul>
+
+                {/*<i className={}></i>*/}
                 {/*<IconComponent icon="star" color="#444" size={100} />*/}
 
-                <IconComponent icon="heart1" size={50} color="#5096ec" />
-                <IconComponent icon="chat" size={50} color="#5096ec" />
-                <IconComponent icon="camera" size={50} color="#5096ec" />
-                <IconComponent icon="genius" size={50} color="#5096ec" />
+                {/*<IconComponent icon="heart1" size={50} color="#5096ec" />*/}
+                {/*<IconComponent icon="chat" size={50} color="#5096ec" />*/}
+                {/*<IconComponent icon="camera" size={50} color="#5096ec" />*/}
+                {/*<IconComponent icon="genius" size={50} color="#5096ec" />*/}
                 <div>
                     {/*<PictureWrapComponent />*/}
                 </div>

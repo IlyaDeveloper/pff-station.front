@@ -3,7 +3,7 @@ import IcoMoon, {iconList} from "react-icomoon";
 
 const iconSet = {
         "IcoMoonType": "selection",
-        "icons": [
+        "icons2": [
         {
             "id": 14,
             "paths": [
@@ -165,7 +165,7 @@ const iconSet = {
             }
         }
     ],
-        "icons2": [
+        "icons": [
             {
                 "icon": {
                     "paths": [
@@ -490,7 +490,7 @@ const iconSet = {
 console.log(iconList(iconSet));
 
 const IconComponent = () => {
-    return <IcoMoon iconSet={iconSet1} icon="start" size={50} color="#5096ec"/>;
+    return <IcoMoon iconSet={iconSet} icon="document" size={50} color="#5096ec"/>;
 };
 
 export default IconComponent;
