@@ -32,6 +32,4 @@ export default defineConfig({
         assetsDir: 'assets',
         assetsInlineLimit: 4096,
     }
-
-
 })

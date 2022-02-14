@@ -10,17 +10,6 @@
   font-style: normal;
 }
 
-
-@font-face {
-  font-family: 'Rota regular';
-  src:url('../../assets/fonts/rota/RotaRegular.woff2') format('woff2'),
-  url('../../assets/fonts/rota/RotaRegular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-
 [class^='#{$icon-font-prefix}'],
 [class*=' #{$icon-font-prefix}'] {
   /* use !important to prevent issues with browser extensions that change fonts */

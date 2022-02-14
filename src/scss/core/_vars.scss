@@ -54,11 +54,9 @@ $dark: var(--cl-dark);
 
 $gray: var(--cl-ligh-gray);
 
-
 //$error: var(--cl-error);
 //$warning: var(--cl-warning);
 //$success: var(--cl-success);
-
 
 $base-color: var(--cl-base);
 $border-color: var(--cl-border);
@@ -77,7 +75,9 @@ $base-font-color: $secondary !default;
 $base-font-size-color: 16px !default;
 
 // * fonts
-$font-path: '../assets/fonts' !default;
+$font-path: '../assets/fonts/' !default;
+$font-path-rota: $font-path + 'rota/' !default;
+$icon-font-path: $font-path + 'pfp-font-icons' !default;
 
 //$font-family-primary: 'Montserrat', sans-serif;
 $font-family-primary: 'Rota', sans-serif;
@@ -87,7 +87,6 @@ $font-family-secondary: 'Public Sans', sans-serif; //'Halenoir Compact';
 //* Icons
 $icon-font-family: 'pfp-station-icon' !default;
 $icon-font-prefix: 'pfi-';
-$icon-font-path: $font-path + '/pfp-font-icons' !default;
 
 $pfi-star: "\e907";
 $pfi-box: "\e904";
@@ -96,7 +95,7 @@ $pfi-option: "\e906";
 $pfi-group: "\e900";
 $pfi-fox: "\e901";
 $pfi-file: "\e902";
-$pfi-colletion: "\e903";
+$pfi-collection: "\e903";
 
 $icons-font-map: (
     star: $pfi-star,
@@ -106,7 +105,7 @@ $icons-font-map: (
     group: $pfi-group,
     fox: $pfi-fox,
     file: $pfi-file,
-    colletion: $pfi-colletion,
+    collection: $pfi-collection,
 );
 
 // * shadows
