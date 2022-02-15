@@ -34,10 +34,25 @@ const WELCOME_SLIDER_IMAGES: any = [
     {image: image_welocme_8, alt: 'picture nft'},
     {image: image_welocme_9, alt: 'picture nft'},
 ];
+const slider = (handler) => {
+    console.log('slide change')
+    handler.list
+    console.log('    handler.list',     handler.list)
+};
+
+const onSwiper = (swiper: any) => {
+    let  elm = swiper.srcElement
+
+    console.log( 'sss',  swiper)
+    // console.log('    handler.list',     elm)
+
+}
 
 const WelcomeComponent = () => {
+
+
     return (
-        <section className={'welcome'}>
+        <section className="welcome">
             <div className="container">
                 <HeadingComponent>Make and sell your own<br/>Profile Picture NTF</HeadingComponent>
 
@@ -53,8 +68,9 @@ const WelcomeComponent = () => {
                         loop={true}
                         spaceBetween={0}
                         slidesPerView={'auto'}
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}
+                        onSlideChange={slider}
+                        // on={onAny}
+                        onSwiper={onSwiper}
                     >
 
                         {WELCOME_SLIDER_IMAGES.map((item: any) => {

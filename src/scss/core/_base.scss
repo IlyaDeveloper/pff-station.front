@@ -108,7 +108,7 @@ body {
 
   background: var(--main-bg, $light);
 
-  //animation: smooth-opacity $transition-start-duration .0s $transition-function 1 forwards;
+  animation: smooth-opacity $transition-start-duration .0s $transition-function 1 forwards;
   //animation-play-state: $global-animation-state;
 }
 

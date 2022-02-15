@@ -69,7 +69,7 @@ $transition-border: border-color $transition-default !default;
 $transition-shadow: box-shadow $transition-default !default;
 
 $transition-start-delay: var(--transition-start-delay, 1.8s);
-$transition-start-duration: var(--transition-start-duration, 1s);
+$transition-start-duration: var(--transition-start-duration, 0s);
 $global-animation-state: var(--gm-play-animation, paused);
 $transition-function: cubic-bezier(.2, .63, .59, .84); //cubic-bezier(0,.89,.36,1.22);
 
