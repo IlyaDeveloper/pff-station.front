@@ -34,9 +34,9 @@
 
     &:before {
       position: absolute;
+      right: var(--container-gutter);
+      left: var(--container-gutter);
       bottom: 0;
-
-      margin: 0 var(--container-gutter);
 
       content: '';
 

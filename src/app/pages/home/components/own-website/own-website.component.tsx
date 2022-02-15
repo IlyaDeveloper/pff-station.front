@@ -5,22 +5,22 @@ import GetStartedComponent from "../../../../components/get-started/get-started.
 
 const OwnWebsiteComponent = () => {
     return (
-        <section className={'own-website'}>
+        <section className='own-website'>
             <div className="container">
-                <div className="">
-                    <HeadingComponent hostClass={'--counter'} headingLevel={2} steps={2}>
+                <div className="own-website__left">
+                    <HeadingComponent hostClass={'--counter'} headingLevel={2} steps={3}>
                         Make<br/>
                         your <span>own website</span><br/>
                         to sell NFT
                     </HeadingComponent>
+
+                    <ul className="own-website__list">
+                        <li>Free website editor</li>
+                        <li>Use your own domain if you want</li>
+                    </ul>
+
+                    <GetStartedComponent/>
                 </div>
-
-                <ul className="own-website__list">
-                    <li>Free website editor</li>
-                    <li>Use your own domain if you want</li>
-                </ul>
-
-                <GetStartedComponent/>
 
                 <div className='own-website__right'>
                     <PictureWrapComponent/>

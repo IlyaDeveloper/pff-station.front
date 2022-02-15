@@ -1,5 +1,85 @@
 @import "../../../../../scss/core/core";
 
 .design-upload {
+  @extend %section;
+  --container-gap: #{rem(40)};
+  --container-block: grid;
+
+  &__items {
+    display: grid;
+    gap: rem(40);
+
+    max-width: rem(310);
+
+    margin: $contentGutter 0 auto;
+  }
+
+  &__item {
+    display: inline-grid;
+    gap: $contentGutter;
+
+    font-weight: 500;
+    font-size: rem(20);
+    line-height: rem(32);
+
+    &.--cloud, &.--property, &.--box {
+      &:before {
+        display: inline-flex;
+        place-content: center center;
+        align-items: center;
+
+        width: rem(40);
+        height: rem(40);
+
+        color: $primary;
+
+        @include pseudo-icon($pfi-cloud, 18.33);
+
+        border-radius: 50%;
+        background-color: rgba(#6236FF, 0.12);
+      }
+
+      &.--property {
+        &:before {
+          content: $pfi-option !important;
+        }
+      }
+
+      &.--box {
+        &:before {
+          content: $pfi-box !important;
+        }
+      }
+    }
+  }
+
+  &__right {
+    max-width: rem(513);
+
+    margin: auto 0 rem(10) auto;
+  }
+
+  @include min-wide(phonesLg) {
+    .container {
+      grid-auto-columns: 1fr 2fr;
+    }
+
+    &__right {
+      grid-column: 2;
+      grid-row: 1/3;
+    }
+  }
+
+
+  @include max-wide(phonesLg) {
+    &__items {
+      order: 2;
+    }
+
+    &__right {
+      order: 1;
+    }
+
+  }
 
 }

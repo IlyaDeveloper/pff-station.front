@@ -1,5 +1,18 @@
 @import "../../../../../scss/core/core";
 
 .connect-your-wallet {
+  @extend %section;
 
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(rem(236), 1fr));
+    align-items: stretch;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    grid-gap: rem(32);
+
+    width: 100%;
+
+    margin: rem(80) 0;
+  }
 }

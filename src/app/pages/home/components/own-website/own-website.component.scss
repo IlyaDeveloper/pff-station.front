@@ -3,10 +3,8 @@
 .own-website {
   @extend %section;
 
-  .container {
-    --container-block: grid;
-    grid-auto-columns: 1fr max-content;
-  }
+  overflow: hidden;
+
 
   &__list {
     max-width: rem(216);
@@ -42,8 +40,45 @@
 
   &__right {
     grid-column: 2;
-    grid-row: 1/4;
+    //grid-row: 1/4;
 
     margin: auto 0 rem(10) auto;
+  }
+
+  @include min-wide(phonesLg) {
+    .container {
+      display: grid;
+      grid-auto-columns: 1fr 2fr;
+    }
+  }
+
+  @include max-wide(phonesLg) {
+    --container-position: relative;
+
+    .own-website__right {
+      position: absolute;
+      right: -50%;
+      bottom: 0;
+      z-index: -1;
+
+      &:before {
+        position: absolute;
+        top: rem(-20);
+        left: rem(-20);
+        right: 0;
+        bottom: rem(-20);;
+        z-index: 1;
+
+        content: '';
+
+        background: linear-gradient(90deg, rgba(255,255,255,1) -5%, rgba(255, 255, 255, 0) 100%);
+      }
+    }
+  }
+
+  @include max-wide(phones) {
+    .own-website__right:before {
+      background: linear-gradient(90deg, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 0) 100%);
+    }
   }
 }

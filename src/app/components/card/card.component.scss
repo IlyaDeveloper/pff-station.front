@@ -1,0 +1,100 @@
+@import "./../../../scss/core/core";
+
+.card {
+  display: flex;
+  flex-flow: column;
+
+  width: 100%;
+  min-width: rem(256);
+  min-height: rem(346);
+
+  padding: $contentGutterX2;
+
+  background: $tertiary;
+  box-shadow: 0 0 0 0 $primary-light;
+
+  border-radius: rem(10);
+
+  transform: scale(1) translate(0, rem(10));
+  transition: .6s cubic-bezier(.17, .67, .46, .79);
+  transition-property: transform, box-shadow, background-color;
+  transform-origin: bottom left;
+
+  cursor: crosshair;
+  user-select: none;
+
+  &__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: rem(56);
+    height: rem(56);
+
+    color: $light;
+
+    font-size: rem(28);
+
+    border-radius: 50%;
+    background-color: var(--cl-dark24);
+
+    &:before {
+      animation: card-icon-animation 2.5s linear 0s infinite both;
+      animation-play-state: var(--card-icon-animation-state, paused);
+    }
+  }
+
+  &__text {
+    margin: auto;
+
+    font-weight: 500;
+    font-size: rem(20);
+    line-height: rem(32);
+
+    transform: var(--card-text-transform, none);
+    transition: transform .6s cubic-bezier(.17, .67, .46, .79);
+  }
+
+  &.--second {
+    background-color: $secondary;
+  }
+
+  &.--tertiary {
+    background-color: $fourth;
+  }
+
+  &.--fourth {
+    color: $light;
+    background-color: $primary;
+  }
+
+  @include only-mouse {
+    &:hover {
+      position: relative;
+      z-index: 1;
+      --card-icon-animation-state: start;
+      --card-text-transform: scale(0.9) translate(#{rem(-10), rem(11)});
+
+      transform: scale(1.1) translate(0, rem(10));
+      box-shadow: rem(12) rem(12) 0 0 $primary-light;
+    }
+
+    &:not(:hover) {
+      --card-icon-animation-scale: none !important;
+    }
+  }
+}
+
+@include keyframes(card-icon-animation) {
+  0% {
+    transform: var(--card-icon-animation-scale, scaleX(1));
+  }
+
+  50% {
+    transform: var(--card-icon-animation-scale, scaleX(-1));
+  }
+
+  100% {
+    transform: var(--card-icon-animation-scale, scaleX(1));
+  }
+}
