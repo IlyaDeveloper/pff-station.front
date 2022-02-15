@@ -12,7 +12,9 @@ const HomeComponent = () => {
         <div>
             <WelcomeComponent/>
             <DesignUploadComponent/>
+            <DownSteps className="--1"/>
             <ConnectYourWalletComponent/>
+            <DownSteps className="--2"/>
             <OwnWebsiteComponent/>
             <DownSteps/>
             <GetAccessComponent/>

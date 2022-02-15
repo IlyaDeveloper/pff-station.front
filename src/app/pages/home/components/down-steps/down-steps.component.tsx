@@ -1,9 +1,11 @@
 import StepItemComponent from "../../../../components/ui/step-item/step-item.component";
 import './down-steps.component.scss';
 
-const DownSteps = () => {
+const DownSteps = (props: any) => {
+    const {className}: any = props;
+
     return (
-        <section className={'down-steps'}>
+        <section className={'down-steps ' + className}>
             <div className="container">
                 <StepItemComponent step={1}>
                     Design & Upload <br/>PFP Collection
