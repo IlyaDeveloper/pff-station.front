@@ -4,11 +4,10 @@ import GetAccessComponent from "../home/components/get-access/get-access.compone
 const AuthComponent = () => {
     return (
         <div className="auth">
-
-
             <GetAccessComponent></GetAccessComponent>
         </div>
     );
 }
+
 
 export default AuthComponent

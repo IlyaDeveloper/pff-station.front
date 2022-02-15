@@ -12,7 +12,6 @@ class TmComponent extends Component<Tmrops> {
         return (
             <button className={'button ' + this.props.hostClass} type="button" onClick={this.props.onClick}>
                 {
-
                     this.props.children
                 }
             </button>

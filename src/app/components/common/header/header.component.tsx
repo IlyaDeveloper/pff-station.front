@@ -41,7 +41,6 @@ class HeaderComponent extends Component<HeaderProps, HeaderState> {
                     <div className="header__logo"><LogoComponent/></div>
 
                     <div className="header__right">
-                        <Link to={'/'}>sdsdsd</Link>
                         <Link to={'/auth'}><ButtonComponent hostClass={'--null'}>Sign in</ButtonComponent></Link>
                         <Link to={'/auth'}><ButtonComponent>Sign up</ButtonComponent></Link>
                     </div>

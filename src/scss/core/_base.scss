@@ -25,59 +25,59 @@ html {
 
   scroll-behavior: smooth;
 
-  &[loading="true"] {
-    &:before {
-      position: fixed;
-      top: calc(50% - (#{$loader-size} / 2)) !important;
-      left: calc(50% - (#{$loader-size} / 2)) !important;
-      z-index: z-index('modal')  + $z-index-step;
-
-      width: $loader-size;
-      height: $loader-size;
-
-      content: '';
-      color: $primary;
-
-      border: rem(2) solid transparent;
-      border-top-color: currentColor;
-      border-left-color: currentColor;
-      border-radius: 50%;
-
-      animation: .4s linear infinite rotate;
-    }
-
-    &:after {
-      position: fixed;
-      bottom: 0;
-      left: 50%;
-
-      display: inline-flex;
-
-      padding: rem(2) rem(8) 0;
-
-      font-weight: 500;
-      font-size: rem(14);
-
-      content: 'New Hope urrogacy loading page...';
-      color: $light;
-      line-height: 1.4;
-      white-space: nowrap;
-
-      border-radius: rem(6) rem(6) 0 0;
-      background-color: $primary;
-
-      transform: translate(-50%, 0);
-    }
-
-    body {
-      visibility: hidden;
-      animation: stop;
-    }
-  }
-
-  &[loading="false"] {
-    --gm-play-animation: start;
-  }
+  //&[loading="true"] {
+  //  &:before {
+  //    position: fixed;
+  //    top: calc(50% - (#{$loader-size} / 2)) !important;
+  //    left: calc(50% - (#{$loader-size} / 2)) !important;
+  //    z-index: z-index('modal')  + $z-index-step;
+  //
+  //    width: $loader-size;
+  //    height: $loader-size;
+  //
+  //    content: '';
+  //    color: $primary;
+  //
+  //    border: rem(2) solid transparent;
+  //    border-top-color: currentColor;
+  //    border-left-color: currentColor;
+  //    border-radius: 50%;
+  //
+  //    animation: .4s linear infinite rotate;
+  //  }
+  //
+  //  &:after {
+  //    position: fixed;
+  //    bottom: 0;
+  //    left: 50%;
+  //
+  //    display: inline-flex;
+  //
+  //    padding: rem(2) rem(8) 0;
+  //
+  //    font-weight: 500;
+  //    font-size: rem(14);
+  //
+  //    content: 'New Hope urrogacy loading page...';
+  //    color: $light;
+  //    line-height: 1.4;
+  //    white-space: nowrap;
+  //
+  //    border-radius: rem(6) rem(6) 0 0;
+  //    background-color: $primary;
+  //
+  //    transform: translate(-50%, 0);
+  //  }
+  //
+  //  body {
+  //    visibility: hidden;
+  //    animation: stop;
+  //  }
+  //}
+  //
+  //&[loading="false"] {
+  //  --gm-play-animation: start;
+  //}
 
   @media (max-width: 1160px) {
     font-size: 85%;
