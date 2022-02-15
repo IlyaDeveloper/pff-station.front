@@ -20,6 +20,29 @@
   color: var(--header-color, $light);
 
   background: var(--header-background, $light);
+  box-shadow: 0 rem(-1) 4vh 0vh $light;
+
+  transition: $transition-default;
+  transition-property: box-shadow, height;
+
+  &:not(.--border-null) {
+    .header__wrap {
+      &:before {
+        position: absolute;
+        right: var(--container-gutter);
+        left: var(--container-gutter);
+        bottom: 0;
+
+        content: '';
+
+        border-bottom: rem(1) solid $border-color;
+      }
+    }
+  }
+
+  &.--small {
+    --header-height: #{rem(68)}
+  }
 
   &__wrap {
     position: relative;
@@ -30,21 +53,6 @@
 
     margin: 0 auto;
     padding: var(--container-gutter);
-
-
-    &:before {
-      position: absolute;
-      right: var(--container-gutter);
-      left: var(--container-gutter);
-      bottom: 0;
-
-      content: '';
-
-      border-bottom: rem(1) solid $border-color;
-    }
-  }
-
-  &__logo {
   }
 
   &, &__wrap, &__btn {
@@ -56,91 +64,96 @@
     gap: $contentGutter;
   }
 
-  &__menu {
-    position: relative;
-    z-index: $z-index-step + 1;
+  &__right {
+    display: inline-flex;
 
-    width: rem(36);
-    height: rem(36);
+    gap: $contentGutter;
 
-    padding: 0;
-    margin: 0 0 0 rem(24);
-
-    outline: none;
-    color: currentColor;
-
-    border: none;
-    background: none;
-    cursor: pointer;
-
-    -webkit-appearence: none;
-    -webkit-tap-highlight-color: transparent;
-
-    svg {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-
-      display: block;
-
-      width: rem(64);
-      height: rem(48);
-
-      stroke: var(--header-color, currentColor);
-      stroke-width: 4px;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-
-      fill: none;
-
-      transform: translate(-50%, -50%);
-
-      path {
-        transition: stroke-dasharray var(--duration, .85s) var(--easing, ease) var(--delay, 0s), stroke-dashoffset var(--duration, .85s) var(--easing, ease) var(--delay, 0s);
-        stroke-dasharray: var(--array-1, 26px) var(--array-2, 100px);
-        stroke-dashoffset: var(--offset, 126px);
-        transform: translateZ(0);
-
-        &:nth-child(2) {
-          --duration: .7s;
-          --easing: ease-in;
-          --offset: 100px;
-          --array-2: 74px;
-        }
-
-        &:nth-child(3) {
-          --offset: 133px;
-          --array-2: 107px;
-        }
-      }
-    }
-
-    &.--is-active {
-      --header-color: #{$primary};
-
-      svg {
-        path {
-          --offset: 57px;
-
-          &:nth-child(1),
-          &:nth-child(3) {
-            --delay: .15s;
-            --easing: cubic-bezier(.2, .4, .2, 1.1);
-          }
-
-          &:nth-child(2) {
-            --duration: .4s;
-            --offset: 2px;
-            --array-1: 1px;
-          }
-
-          &:nth-child(3) {
-            --offset: 58px;
-          }
-        }
-      }
-    }
   }
 
-
+  //&__menu {
+  //  position: relative;
+  //  z-index: $z-index-step + 1;
+  //
+  //  width: rem(36);
+  //  height: rem(36);
+  //
+  //  padding: 0;
+  //  margin: 0 0 0 rem(24);
+  //
+  //  outline: none;
+  //  color: currentColor;
+  //
+  //  border: none;
+  //  background: none;
+  //  cursor: pointer;
+  //
+  //  -webkit-appearence: none;
+  //  -webkit-tap-highlight-color: transparent;
+  //
+  //  svg {
+  //    position: absolute;
+  //    top: 50%;
+  //    left: 50%;
+  //
+  //    display: block;
+  //
+  //    width: rem(64);
+  //    height: rem(48);
+  //
+  //    stroke: var(--header-color, currentColor);
+  //    stroke-width: 4px;
+  //    stroke-linecap: round;
+  //    stroke-linejoin: round;
+  //
+  //    fill: none;
+  //
+  //    transform: translate(-50%, -50%);
+  //
+  //    path {
+  //      transition: stroke-dasharray var(--duration, .85s) var(--easing, ease) var(--delay, 0s), stroke-dashoffset var(--duration, .85s) var(--easing, ease) var(--delay, 0s);
+  //      stroke-dasharray: var(--array-1, 26px) var(--array-2, 100px);
+  //      stroke-dashoffset: var(--offset, 126px);
+  //      transform: translateZ(0);
+  //
+  //      &:nth-child(2) {
+  //        --duration: .7s;
+  //        --easing: ease-in;
+  //        --offset: 100px;
+  //        --array-2: 74px;
+  //      }
+  //
+  //      &:nth-child(3) {
+  //        --offset: 133px;
+  //        --array-2: 107px;
+  //      }
+  //    }
+  //  }
+  //
+  //  &.--is-active {
+  //    --header-color: #{$primary};
+  //
+  //    svg {
+  //      path {
+  //        --offset: 57px;
+  //
+  //        &:nth-child(1),
+  //        &:nth-child(3) {
+  //          --delay: .15s;
+  //          --easing: cubic-bezier(.2, .4, .2, 1.1);
+  //        }
+  //
+  //        &:nth-child(2) {
+  //          --duration: .4s;
+  //          --offset: 2px;
+  //          --array-1: 1px;
+  //        }
+  //
+  //        &:nth-child(3) {
+  //          --offset: 58px;
+  //        }
+  //      }
+  //    }
+  //  }
+  //}
 }

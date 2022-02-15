@@ -6,17 +6,40 @@ import './header.component.scss'
 
 interface HeaderProps {
     children?: React.ReactNode;
-    hostClass?: string,
+    hostClass?: string
 }
 
-class HeaderComponent extends Component<HeaderProps> {
+interface HeaderState {
+    activeClass?: string
+}
+
+class HeaderComponent extends Component<HeaderProps, HeaderState> {
+    constructor(props: any) {
+        super(props);
+
+        this.state = {activeClass: ''};
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', () => {
+            let activeClass: string;
+
+            (window.scrollY > 5)
+                ? (activeClass = '--border-null --small')
+                : (activeClass = '')
+
+            this.setState({activeClass});
+        });
+    }
+
     render() {
         return (
-            <header className={'header ' + this.props.hostClass}>
+            <header
+                className={`header ${this.props.hostClass || ''} ${this.state.activeClass}`}>
                 <div className="header__wrap">
                     <div className="header__logo"><LogoComponent/></div>
 
-                    <div className="header__btns">
+                    <div className="header__right">
                         <ButtonComponent hostClass={'--null'}>Sign in</ButtonComponent>
                         <ButtonComponent>Sign up</ButtonComponent>
                     </div>

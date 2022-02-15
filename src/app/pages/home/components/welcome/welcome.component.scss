@@ -59,7 +59,7 @@
 
   transform-style: preserve-3d;
 
-  //transform: scale(var(--swiper-slide-scale, 1)) !important;
+  transform: scale(var(--swiper-slide-scale, 1)) !important;
   transition: transform $transition-default;
 
 
@@ -74,7 +74,7 @@
 
   &.swiper-slide-active {
     //--swiper-slide-size: #{rem(110)}
-    //--swiper-slide-scale: 0.733!important;
+    --swiper-slide-scale: 0.733;
   }
 
   &.swiper-slide-visible {
@@ -83,24 +83,24 @@
 
   &.swiper-slide-prev {
 
-    //--swiper-slide-scale: 0.8!important;
+    --swiper-slide-scale: 0.8!important;
 
   }
 
   &.swiper-slide-next {
-    --swiper-slide-scale: 0.8!important;
-    //
-    //& + * {
-    //  --swiper-slide-scale: 0.88;
-    //}
-    //
-    //& + * + * {
-    //  --swiper-slide-scale: 0.94;
-    //}
+    --swiper-slide-scale: 0.8;
 
-    //& + * + * + * {
-    //  --swiper-slide-scale: 1;
-    //}
+    & + * {
+      --swiper-slide-scale: 0.88;
+    }
+
+    & + * + * {
+      --swiper-slide-scale: 0.94;
+    }
+
+    & + * + * + * {
+      --swiper-slide-scale: 1;
+    }
   }
 
   &.swiper-slide-duplicate {

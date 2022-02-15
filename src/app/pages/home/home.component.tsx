@@ -7,6 +7,8 @@ import DesignUploadComponent from "./components/design-upload/design-upload.comp
 import WelcomeComponent from "./components/welcome/welcome.component";
 import DownSteps from "./components/down-steps/down-steps.component";
 
+// import Fade from '@stahl.luke/react-reveal/Fade';
+
 const HomeComponent = () => {
     return (
         <div>
