@@ -1,33 +1,71 @@
 import './welcome.component.scss'
 import HeadingComponent from "../../../../components/ui/heading/heading.component";
 import {Swiper, SwiperSlide} from 'swiper/react';
+import {EffectCreative} from 'swiper';
+
+import image_welocme_1 from '../../../../../assets/images/swiper/s1.svg';
+import image_welocme_2 from '../../../../../assets/images/swiper/s2.svg';
+import image_welocme_3 from '../../../../../assets/images/swiper/s3.svg';
+import image_welocme_4 from '../../../../../assets/images/swiper/s4.svg';
+import image_welocme_5 from '../../../../../assets/images/swiper/s5.svg';
+import image_welocme_6 from '../../../../../assets/images/swiper/s6.png';
+import image_welocme_7 from '../../../../../assets/images/swiper/s7.svg';
+import image_welocme_8 from '../../../../../assets/images/swiper/s8.svg';
+import image_welocme_9 from '../../../../../assets/images/swiper/s9.svg';
 
 const WelcomeComponent = () => {
     const images = [
-        {image: 's1.svg', alt: ''},
-        {image: 's2.svg', alt: ''},
-        {image: 's3.svg', alt: ''},
-        {image: 's4.svg', alt: ''},
-        {image: 's5.svg', alt: ''},
-        {image: 's6.svg', alt: ''},
-        {image: 's7.svg', alt: ''},
-        {image: 's8.svg', alt: ''},
-        {image: 's9.svg', alt: ''},
+        {image: image_welocme_1, alt: 'picture nft'},
+        {image: image_welocme_2, alt: 'picture nft'},
+        {image: image_welocme_3, alt: 'picture nft'},
+        {image: image_welocme_4, alt: 'picture nft'},
+        {image: image_welocme_5, alt: 'picture nft'},
+        {image: image_welocme_6, alt: 'picture nft'},
+        {image: image_welocme_7, alt: 'picture nft'},
+        {image: image_welocme_8, alt: 'picture nft'},
+        {image: image_welocme_9, alt: 'picture nft'},
     ];
+
+
+    // coverflowEffect={{
+    //     rotate: 0,
+    //         stretch: -100,
+    //         depth: 100,
+    //         modifier: 0,
+    //         scale: 0,
+    //         slideShadows: false,
+    //         transformEl: '.--slideEffect'
+    // }}
 
     return (
         <section className={'welcome'}>
             <div className="container">
-
                 <HeadingComponent>Make and sell your own<br/>Profile Picture NTF</HeadingComponent>
-
 
                 <p className={'welcome__text'}>No code.&nbsp;&nbsp;No gas fee.&nbsp;&nbsp;For free.</p>
 
                 <div className="welcome__slider">
                     <Swiper
-                        spaceBetween={50}
-                        slidesPerView={3}
+                        modules={[EffectCreative]} effect="coverflow"
+                        creativeEffect={{
+                            perspective: true,
+                            limitProgress: 4,
+                            progressMultiplier: 2,
+                            prev: {
+                                opacity: 0.5,
+                                scale: 0,
+
+                            },
+                            next: {
+                                // perspective: true
+                                scale: 2
+                            }
+                        }}
+                        grabCursor={true}
+                        centeredSlides={true}
+                        loop={true}
+                        spaceBetween={0}
+                        slidesPerView={'auto'}
                         onSlideChange={() => console.log('slide change')}
                         onSwiper={(swiper) => console.log(swiper)}
                     >
@@ -35,8 +73,8 @@ const WelcomeComponent = () => {
                         {images.map(item => {
                             return (
                                 <SwiperSlide>
-                                    <picture>
-                                        <img src={'assets/images/swiper/' + item.image} alt={item.alt}/>
+                                    <picture className="welcome__pic">
+                                        <img src={item.image} alt={item.alt}/>
                                     </picture>
                                 </SwiperSlide>
                             )

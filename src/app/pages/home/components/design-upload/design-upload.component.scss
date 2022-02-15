@@ -2,8 +2,11 @@
 
 .design-upload {
   @extend %section;
+
   --container-gap: #{rem(40)};
   --container-block: grid;
+
+  overflow: hidden;
 
   &__items {
     display: grid;
@@ -81,5 +84,4 @@
     }
 
   }
-
 }

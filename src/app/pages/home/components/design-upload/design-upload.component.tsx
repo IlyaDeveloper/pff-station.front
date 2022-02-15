@@ -1,7 +1,6 @@
 import './design-upload.component.scss';
 import HeadingComponent from "../../../../components/ui/heading/heading.component";
 import PictureWrapComponent from "../../../../components/picture-wrap/picture-wrap.component";
-// import HeadingComponent from "../../../../components/ui/heading/heading.component";
 
 const DesignUploadComponent = () => {
     return (
@@ -19,7 +18,6 @@ const DesignUploadComponent = () => {
                     <mark className="design-upload__item --property">Set property of NFT-tokens</mark>
                     <mark className="design-upload__item --box">Free IPFS upload</mark>
                 </div>
-
 
                 <div className="design-upload__right">
                     <PictureWrapComponent/>
