@@ -3,20 +3,47 @@
 .own-website {
   @extend %section;
 
-  &__left {
-  }
-
-  &__right {
+  .container {
+    --container-block: grid;
+    grid-auto-columns: 1fr max-content;
   }
 
   &__list {
-    li{
+    max-width: rem(216);
+
+    padding: 0;
+    margin: rem(80) 0;
+
+    font-weight: 500;
+    font-size: rem(20);
+    line-height: rem(32);
+
+    li {
+      display: inline-flex;
+      align-items: baseline;
+
       //height: 24;
       //min-width: rem(24);
-      &:before{
-        //@include pseudo-icon($pfi-star, 24 )
+      &:before {
+        margin: 0 $contentGutter 0 0;
+
+        @include pseudo-icon($pfi-star, 24);
+        color: $primary;
+
+        transform: translate(0, rem(8));
+      }
+
+      &:not(:first-of-type) {
+        margin-top: rem(12);
       }
 
     }
+  }
+
+  &__right {
+    grid-column: 2;
+    grid-row: 1/4;
+
+    margin: auto 0 rem(10) auto;
   }
 }

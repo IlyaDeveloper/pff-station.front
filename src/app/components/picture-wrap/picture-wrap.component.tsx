@@ -1,6 +1,6 @@
 import {Component} from "react";
 import './picture-wrap.component.scss'
-import rightImage from '../../../assets/images/right-img.jpg'
+import rightImage from '../../../assets/images/right-img.jpeg'
 
 interface PictureWrapProps {
     children?: React.ReactNode;
@@ -11,7 +11,7 @@ class PictureWrapComponent extends Component<PictureWrapProps> {
     render() {
         return (
             <article className={'picture-wrap'}>
-                <picture>
+                <picture className={'picture-wrap__pic'}>
                     <img src={rightImage} alt="pfp station"/>
                 </picture>
             </article>

@@ -1,0 +1,25 @@
+@import "./../../../scss/core/core";
+
+.get-started {
+
+  &__svg {
+    width: rem(160);
+    height: rem(160);
+
+    path {
+      fill: $primary;
+
+      transform-origin: center center;
+
+      &:first-child {
+        animation: rotate 20s 0s infinite linear both alternate;
+      }
+    }
+  }
+}
+
+@include keyframes(rotate) {
+  from {
+    transform: rotate(var(--get-started-rotate, 380deg));
+  }
+}
