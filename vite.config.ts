@@ -24,8 +24,8 @@ export default defineConfig({
     resolve: {
         alias: {
             scssCore: path.resolve("./scss/core/core"),
-            components: path.resolve("./app/components"),
-            '@': resolve(__dirname, 'src'),
+            components: path.resolve("./app/components")
+            // '@': resolve(__dirname, 'src'),
         }
     },
     build: {

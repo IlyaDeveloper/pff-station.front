@@ -1,6 +1,7 @@
 import {Component} from "react";
 import LogoComponent from "../../ui/logo/logo.component";
 import ButtonComponent from "../../ui/button/button.component";
+import {Link} from "react-router-dom";
 
 import './header.component.scss'
 
@@ -40,8 +41,9 @@ class HeaderComponent extends Component<HeaderProps, HeaderState> {
                     <div className="header__logo"><LogoComponent/></div>
 
                     <div className="header__right">
-                        <ButtonComponent hostClass={'--null'}>Sign in</ButtonComponent>
-                        <ButtonComponent>Sign up</ButtonComponent>
+                        <Link to={'/'}>sdsdsd</Link>
+                        <Link to={'/auth'}><ButtonComponent hostClass={'--null'}>Sign in</ButtonComponent></Link>
+                        <Link to={'/auth'}><ButtonComponent>Sign up</ButtonComponent></Link>
                     </div>
                 </div>
             </header>

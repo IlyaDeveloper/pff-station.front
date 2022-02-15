@@ -12,9 +12,9 @@
     "@stahl.luke/react-reveal": "^1.2.3",
     "icomoon-react": "^2.0.19",
     "react": "^17.0.2",
-    "react-awesome-reveal": "^3.8.1",
     "react-dom": "^17.0.2",
     "react-icomoon": "^2.4.3",
+    "react-router-dom": "^6.2.1",
     "swiper": "^8.0.5",
     "vite-plugin-pug": "^0.3.0",
     "webfontloader": "^1.6.28"

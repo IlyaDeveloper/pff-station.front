@@ -1,0 +1,44 @@
+@import "../../../../scss/core/core";
+
+.footer {
+  --container-gap: #{rem(8)};
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+
+  height: rem(120);
+
+  color: $light;
+
+  background: $primary;
+
+  &__copy {
+    font-size: rem(18);
+    line-height: rem(30);
+  }
+
+  &__bottom, &__links {
+    display: flex;
+    gap: $contentGutterX2;
+    align-items: center;
+    justify-content: space-between;
+    place-self: stretch;
+  }
+
+  &__links {
+    margin: auto 0 auto auto;
+
+    font-size: rem(16);
+    line-height: rem(24);
+  }
+
+  &__link {
+    display: inline-flex;
+    font-size: rem(16);
+  }
+}

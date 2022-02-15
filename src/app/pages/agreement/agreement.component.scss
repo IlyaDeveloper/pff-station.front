@@ -1,0 +1,21 @@
+@import "./../../../scss/core/core";
+
+.agreement {
+  @extend %section;
+
+  --cntainer-gap: #{rem(40)};
+  --container-align-items: center;
+
+  text-align: center;
+
+  &__content {
+    font-size: rem(16);
+    line-height: 1.4;
+  }
+
+  &__text{
+    margin-top: rem(24);
+
+    font-size: rem(20);
+  }
+}

@@ -34,18 +34,14 @@ const WELCOME_SLIDER_IMAGES: any = [
     {image: image_welocme_8, alt: 'picture nft'},
     {image: image_welocme_9, alt: 'picture nft'},
 ];
-const slider = (handler) => {
+const slider = () => {
     console.log('slide change')
-    handler.list
-    console.log('    handler.list',     handler.list)
 };
 
 const onSwiper = (swiper: any) => {
-    let  elm = swiper.srcElement
+    let elm = swiper.srcElement
 
-    console.log( 'sss',  swiper)
-    // console.log('    handler.list',     elm)
-
+    console.log('sss', swiper)
 }
 
 const WelcomeComponent = () => {
@@ -69,7 +65,6 @@ const WelcomeComponent = () => {
                         spaceBetween={0}
                         slidesPerView={'auto'}
                         onSlideChange={slider}
-                        // on={onAny}
                         onSwiper={onSwiper}
                     >
 
