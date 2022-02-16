@@ -75,6 +75,7 @@ html {
   //  }
   //}
   //
+
   //&[loading="false"] {
   //  --gm-play-animation: start;
   //}
@@ -94,6 +95,8 @@ html {
   @media (max-width: 340px) {
     font-size: 66%;
   }
+
+  @include scroll-small;
 }
 
 body {
@@ -110,6 +113,7 @@ body {
 
   animation: smooth-opacity $transition-start-duration .0s $transition-function 1 forwards;
   //animation-play-state: $global-animation-state;
+
 }
 
 a {

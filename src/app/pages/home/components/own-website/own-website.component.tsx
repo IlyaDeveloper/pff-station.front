@@ -4,6 +4,10 @@ import PictureWrapComponent from "../../../../components/picture-wrap/picture-wr
 import GetStartedComponent from "../../../../components/ui/get-started/get-started.component";
 import {AnimationOnScroll} from "react-animation-on-scroll";
 
+import image2 from "../../../../../assets/images/img_2.jpg";
+import image2x from "../../../../../assets/images/img_2x2.jpg";
+
+
 const OwnWebsiteComponent = () => {
     return (
         <section className='own-website'>
@@ -31,7 +35,7 @@ const OwnWebsiteComponent = () => {
 
                 <div className='own-website__right'>
                     <AnimationOnScroll animateIn="animate__zoomIn" offset={0} duration={1.5} delay={1}>
-                        <PictureWrapComponent/>
+                        <PictureWrapComponent src={image2} srcset={image2x}/>
                     </AnimationOnScroll>
                 </div>
             </div>

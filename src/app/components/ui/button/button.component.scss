@@ -24,6 +24,7 @@
   transition: .5s linear;
   transition-property: background-color, box-shadow, color, transform;
   background: $primary;
+  cursor: pointer;
 
   &.--null {
     background-color: transparent !important;

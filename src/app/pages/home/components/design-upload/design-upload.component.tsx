@@ -3,6 +3,10 @@ import HeadingComponent from "../../../../components/ui/heading/heading.componen
 import PictureWrapComponent from "../../../../components/picture-wrap/picture-wrap.component";
 import {AnimationOnScroll} from 'react-animation-on-scroll';
 
+import image1 from "../../../../../assets/images/img_1.jpg";
+import image1x from "../../../../../assets/images/img_1x2.jpg";
+
+
 const DesignUploadComponent = () => {
     return (
         <section className="design-upload">
@@ -26,7 +30,7 @@ const DesignUploadComponent = () => {
 
                 <div className="design-upload__right">
                     <AnimationOnScroll animateIn="animate__zoomIn" offset={0} duration={1.5} delay={1}>
-                        <PictureWrapComponent/>
+                        <PictureWrapComponent src={image1} srcset={image1x}/>
                     </AnimationOnScroll>
                 </div>
             </div>
