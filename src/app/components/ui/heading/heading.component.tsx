@@ -31,7 +31,7 @@ class HeadingComponent extends Component<HeadingProps> {
         let Tag: any = (chekTag(this.props.headingLevel) ? ('h' + this.props.headingLevel) : 'h1');
 
         return (
-            <Tag className={'heading ' + this.tagClass() + this.hasClass()}
+            <Tag className={`heading ${this.tagClass()}  ${this.hasClass()}`}
                  data-count={this.props.steps}>
                 {this.props.children}
             </Tag>

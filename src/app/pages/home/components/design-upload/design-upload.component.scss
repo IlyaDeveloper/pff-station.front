@@ -73,10 +73,23 @@
     }
   }
 
-
   @include max-wide(phonesLg) {
+    text-align: center;
+
     &__items {
+      margin: 0 auto;
+
       order: 2;
+    }
+    &__item {
+      &:before {
+        margin: auto;
+
+        font-size: rem(30) !important;
+
+        width: rem(70) !important;
+        height: rem(70) !important;
+      }
     }
 
     &__right {

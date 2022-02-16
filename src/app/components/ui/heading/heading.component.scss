@@ -18,7 +18,8 @@
 
   &.--counter {
     position: relative;
-    text-align: left;
+
+    text-align: var(--heading-align, left);
 
     &:before {
       position: absolute;
@@ -31,13 +32,30 @@
       font-size: rem(14);
       line-height: rem(20);
     }
-
   }
 
   span {
     font-weight: 300;
   }
 
+
+  @include max-wide(phonesLg) {
+    font-size: rem(40);
+
+    &.--mob-center {
+      text-align: center !important;
+
+      &:before {
+        position: absolute;
+        top: rem(-28);
+        left: 50%;
+
+        transform: translate(-50%, 0);
+
+      }
+    }
+
+  }
   //&.--h3 {
   //}
   //

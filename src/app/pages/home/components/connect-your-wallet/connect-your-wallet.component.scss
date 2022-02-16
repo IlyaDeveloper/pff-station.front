@@ -15,4 +15,10 @@
 
     margin: rem(80) 0;
   }
+
+  @include max-wide(phonesLg){
+    &__list {
+      margin: rem(24) 0 0;
+    }
+  }
 }

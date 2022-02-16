@@ -38,6 +38,12 @@
   .container {
     @extend %glob-animation-to-up;
   }
+
+  @include max-wide(phones){
+    &__text{
+      margin-top: rem(32);
+    }
+  }
 }
 
 .swiper-wrapper {

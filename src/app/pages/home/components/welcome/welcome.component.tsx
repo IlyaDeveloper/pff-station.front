@@ -50,7 +50,7 @@ const WelcomeComponent = () => {
             <div className="container">
                 <HeadingComponent>Make and sell your own<br/>Profile Picture NTF</HeadingComponent>
 
-                <p className={'welcome__text'}>No code.&nbsp;&nbsp;No gas fee.&nbsp;&nbsp;For free.</p>
+                <p className="welcome__text">No code.&nbsp;&nbsp;No gas fee.&nbsp;&nbsp;For free.</p>
 
                 <div className="welcome__slider">
                     <Swiper

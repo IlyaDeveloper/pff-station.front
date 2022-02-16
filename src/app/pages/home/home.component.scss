@@ -12,17 +12,31 @@
     padding: var(--header-height) 0 0;
     border-radius: 0 0 rem(80) rem(80);
     background: $light;
+  }
 
+  @include min-wide(phonesLg) {
     .own-website {
       margin-bottom: var(--down-steps-height, rem(128));
     }
+
+    &__stiky {
+      position: sticky;
+      top: calc(#{rem(1)} + var(--header-height));
+      z-index: 2;
+
+      transform: translate(0, rem(-2));
+    }
   }
 
-  &__stiky {
-    position: sticky;
-    top: calc(#{rem(1)} + var(--header-height));
-    z-index: 2;
+  @include max-wide(phonesLg) {
+    &__main-blocks {
+      display: flex;
+      flex-flow: column ;
+      order: 1;
+    }
 
-    transform: translate(0, rem(-2));
+    &__stiky {
+      order: 1;
+    }
   }
 }

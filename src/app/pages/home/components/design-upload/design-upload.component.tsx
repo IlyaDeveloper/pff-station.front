@@ -8,7 +8,7 @@ const DesignUploadComponent = () => {
         <section className="design-upload">
             <div className="container">
                 <AnimationOnScroll animateIn="animate__fadeInUp" offset={150} duration={2.2} delay={1}>
-                    <HeadingComponent hostClass={'--counter'} headingLevel={2} steps={1}>
+                    <HeadingComponent hostClass={'--counter --mob-center'} headingLevel={2} steps={1}>
                         Design & Upload<br/>
                         <span>PFP Collection</span>
                     </HeadingComponent>

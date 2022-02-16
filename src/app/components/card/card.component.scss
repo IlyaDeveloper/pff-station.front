@@ -83,6 +83,26 @@
       --card-icon-animation-scale: none !important;
     }
   }
+
+  @include max-wide(phonesLg) {
+    min-height: rem(300);
+
+    padding: $contentGutterX3;
+
+    &__icon {
+      align-self: center;
+
+      width: rem(86);
+      height: rem(86);
+
+      font-size: rem(40);
+    }
+
+    &__text {
+      text-align: center;
+      font-size: rem(25);
+    }
+  }
 }
 
 @include keyframes(card-icon-animation) {
