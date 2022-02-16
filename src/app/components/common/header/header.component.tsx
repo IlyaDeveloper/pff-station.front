@@ -17,7 +17,6 @@ interface HeaderState {
 class HeaderComponent extends Component<HeaderProps, HeaderState> {
 
     private elmHtml: HTMLElement = document.getElementsByTagName('html')[0];
-    private emlBody: HTMLElement = document.getElementsByTagName('body')[0];
 
     constructor(
         props: any

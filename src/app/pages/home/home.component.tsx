@@ -8,8 +8,6 @@ import WelcomeComponent from "./components/welcome/welcome.component";
 import DownSteps from "./components/down-steps/down-steps.component";
 import {AnimationOnScroll} from "react-animation-on-scroll";
 
-// import Fade from '@stahl.luke/react-reveal/Fade';
-
 const HomeComponent = () => {
     return (
         <section className="home">

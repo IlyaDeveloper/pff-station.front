@@ -42,7 +42,7 @@ class GetAccessFormComponent extends Component<GetAccessFormPops> {
             this.setState({showResults: false})
             clearInterval(timer)
 
-        }, 3000500)
+        }, 4500)
     }
 
     handleChange(event: any) {
@@ -84,9 +84,6 @@ class GetAccessFormComponent extends Component<GetAccessFormPops> {
                 return resolve
             })
             .catch(err => {
-                if  (err == 400){
-                    console.log('err', err)
-                }
                 this.showResultsToggle(STATUS.error, true)
             });
     }
