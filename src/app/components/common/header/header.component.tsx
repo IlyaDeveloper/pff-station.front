@@ -50,8 +50,8 @@ class HeaderComponent extends Component<HeaderProps, HeaderState> {
                     <div className="header__logo"><LogoComponent/></div>
 
                     <div className="header__right">
-                        <Link to={'/auth'}><ButtonComponent hostClass={'--null'}>Sign in</ButtonComponent></Link>
-                        <Link to={'/auth'}><ButtonComponent>Sign up</ButtonComponent></Link>
+                        {/*<Link to={'/auth'}><ButtonComponent hostClass={'--null'}>Sign in</ButtonComponent></Link>*/}
+                        {/*<Link to={'/auth'}><ButtonComponent>Sign up</ButtonComponent></Link>*/}
                     </div>
                 </div>
             </header>
