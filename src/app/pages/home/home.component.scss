@@ -19,13 +19,13 @@
       margin-bottom: var(--down-steps-height, rem(128));
     }
 
-    &__stiky {
-      position: sticky;
-      top: calc(#{rem(1)} + var(--header-height));
-      z-index: 2;
-
-      transform: translate(0, rem(-2));
-    }
+    //&__stiky {
+    //  position: sticky;
+    //  top: calc(#{rem(1)} + var(--header-height));
+    //  z-index: 2;
+    //
+    //  transform: translate(0, rem(-2));
+    //}
   }
 
   @include max-wide(phonesLg) {

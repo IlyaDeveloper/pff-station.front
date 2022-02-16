@@ -16,16 +16,17 @@ const HomeComponent = () => {
 
                 <DesignUploadComponent/>
 
-                <article className="home__stiky">
-                    <AnimationOnScroll animateIn="animate__fadeInUp" offset={-250} duration={2.5} delay={21}>
-                        <DownSteps/>
-                    </AnimationOnScroll>
-                </article>
+                {/*<article className="home__stiky">*/}
+                {/* */}
+                {/*</article>*/}
 
                 {/*<DownSteps className="--1"/>*/}
                 <ConnectYourWalletComponent/>
                 {/*<DownSteps className="--2"/>*/}
                 <OwnWebsiteComponent/>
+                <AnimationOnScroll animateIn="animate__fadeInDown" offset={250} duration={2.5} delay={21}>
+                    <DownSteps/>
+                </AnimationOnScroll>
             </article>
             <GetAccessComponent/>
         </section>
