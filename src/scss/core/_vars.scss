@@ -39,9 +39,9 @@ $themes-map: (
         dark24: rgba(#262628, 0.24),
         base: var(--cl-dark),
         border: #dddddd,
-      //error: #ff5656,
-      //warning: #fffb53,
-      //success: #00FFBC
+        error: #c40606,
+        //warning: #fffb53,
+        success: var(--cl-dark)
     ),
 );
 
@@ -56,9 +56,9 @@ $dark: var(--cl-dark);
 
 $gray: var(--cl-ligh-gray);
 
-//$error: var(--cl-error);
+$error: var(--cl-error);
 //$warning: var(--cl-warning);
-//$success: var(--cl-success);
+$success: var(--cl-success);
 
 $base-color: var(--cl-base);
 $border-color: var(--cl-border);

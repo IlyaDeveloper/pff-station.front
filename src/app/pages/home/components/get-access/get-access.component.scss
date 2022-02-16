@@ -12,25 +12,15 @@
 
   display: flex;
   flex-flow: column;
-
   justify-content: center;
 
   height: var(--get-access-height);
 
   background: $secondary;
 
-
   &__main {
     display: flex;
     flex-flow: column;
     gap: rem(40);
-  }
-
-  &__fieldset {
-    z-index: 100;
-    display: inline-grid;
-    grid-template-columns: 1fr rem(96);
-    gap: rem(16);
-
   }
 }

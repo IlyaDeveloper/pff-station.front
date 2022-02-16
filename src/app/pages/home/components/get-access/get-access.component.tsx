@@ -1,11 +1,10 @@
 import HeadingComponent from "../../../../components/ui/heading/heading.component";
-
-import InputComponent from "../../../../components/ui/input/input.component";
-import ButtonComponent from "../../../../components/ui/button/button.component";
+import GetAccessFormComponent from "../../../../components/common/get-access-form/get-access-form.component";
 
 import './get-access.component.scss'
 
 const GetAccessComponent = () => {
+
     return (
         <section className={'get-access'}>
             <div className="container">
@@ -14,10 +13,8 @@ const GetAccessComponent = () => {
                         Get <span>early access</span><br/>to the beta version
                     </HeadingComponent>
 
-                    <div className="get-access__fieldset">
-                        <InputComponent type={'text'} placeholder={'example@gmail.com'}/>
-                        <ButtonComponent hostClass={'--large'}>Send</ButtonComponent>
-                    </div>
+                    <GetAccessFormComponent/>
+
                 </div>
             </div>
         </section>
