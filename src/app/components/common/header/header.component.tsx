@@ -15,7 +15,13 @@ interface HeaderState {
 }
 
 class HeaderComponent extends Component<HeaderProps, HeaderState> {
-    constructor(props: any) {
+
+    private elmHtml: HTMLElement = document.getElementsByTagName('html')[0];
+    private emlBody: HTMLElement = document.getElementsByTagName('body')[0];
+
+    constructor(
+        props: any
+    ) {
         super(props);
 
         this.state = {activeClass: ''};
@@ -26,8 +32,12 @@ class HeaderComponent extends Component<HeaderProps, HeaderState> {
             let activeClass: string;
 
             (window.scrollY > 5)
-                ? (activeClass = '--border-null --small')
-                : (activeClass = '')
+                ? (activeClass = '--border-null')
+                : (activeClass = '');
+
+            (window.scrollY > 5)
+                ? (this.elmHtml.setAttribute('style', '--header-height: 4.25rem'))
+                : (this.elmHtml.setAttribute('style', ''));
 
             this.setState({activeClass});
         });

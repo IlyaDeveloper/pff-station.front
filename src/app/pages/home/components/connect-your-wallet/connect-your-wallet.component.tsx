@@ -1,6 +1,7 @@
 import './connect-your-wallet.component.scss'
 import HeadingComponent from "../../../../components/ui/heading/heading.component";
 import CardComponent from "../../../../components/card/card.component";
+import {AnimationOnScroll} from "react-animation-on-scroll";
 
 const CONNECT_YOUR_WALLET_CARDS = [
     {
@@ -29,20 +30,24 @@ const ConnectYourWalletComponent = () => {
     return (
         <section className="connect-your-wallet">
             <div className="container">
-                <HeadingComponent hostClass={'--counter'} headingLevel={2} steps={2}>
-                    Connect your wallet<br/>
-                    & upload<span> smart-<br/>contract</span>
-                </HeadingComponent>
+                <AnimationOnScroll animateIn="animate__fadeInUp" offset={150} duration={2.2} delay={1}>
+                    <HeadingComponent hostClass={'--counter'} headingLevel={2} steps={2}>
+                        Connect your wallet<br/>
+                        & upload<span> smart-<br/>contract</span>
+                    </HeadingComponent>
+                </AnimationOnScroll>
 
                 <div className="connect-your-wallet__list">
 
                     {
                         CONNECT_YOUR_WALLET_CARDS.map((item) => {
                             return (
-                                <CardComponent
-                                    hostClass={item.stateClass}
-                                    children={item.caption}
-                                    iconClass={item.iconClass}/>
+                                <AnimationOnScroll animateIn="animate__fadeInUp" offset={150} duration={1.5} delay={1}>
+                                    <CardComponent
+                                        hostClass={item.stateClass}
+                                        children={item.caption}
+                                        iconClass={item.iconClass}/>
+                                </AnimationOnScroll>
                             )
                         })
                     }

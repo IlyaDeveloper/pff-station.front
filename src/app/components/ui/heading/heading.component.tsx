@@ -1,6 +1,8 @@
 import {Component} from "react";
 import './heading.component.scss'
 
+import {AnimationOnScroll} from "react-animation-on-scroll";
+
 interface HeadingProps {
     children?: React.ReactNode;
     headingLevel?: string | number,

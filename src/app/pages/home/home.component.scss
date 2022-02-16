@@ -3,4 +3,29 @@
 .home {
   display: flex;
   flex-flow: column;
+
+  &__main-blocks {
+    position: relative;
+    z-index: 1;
+
+    background: $light;
+
+    border-radius: 0 0 rem(80) rem(80);
+
+    background: $light;
+
+    .own-website {
+      margin-bottom: var(--down-steps-height, rem(128));
+    }
+  }
+
+  &__stiky {
+    position: sticky;
+    top: calc(#{rem(1)} + var(--header-height));
+    z-index: 2;
+
+    transform: translate(0, rem(-2));
+
+    //background: red;
+  }
 }

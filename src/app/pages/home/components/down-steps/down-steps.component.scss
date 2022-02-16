@@ -5,22 +5,17 @@
   --container-justify-content: space-between;
   --container-align-items: center;
 
-  position: relative;
-  z-index: 1;
-
   display: flex;
 
   width: 100%;
-  min-height: rem(128);
+  min-height: var(--down-steps-height, rem(128));
 
   margin: rem(-1.5) 0;
   padding: rem(48) 0;
 
-  border-radius: 0 0 rem(80) rem(80);
-
-  background: $light;
-
   overflow: hidden;
+
+  background: linear-gradient(180deg, rgba(255,255,255,1) 62%, rgba(255,255,255,0) 100%);
 
   @include min-wide(phonesLg) {
     --container-flex-flow: row;
