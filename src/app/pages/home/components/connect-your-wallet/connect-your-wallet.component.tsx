@@ -40,9 +40,9 @@ const ConnectYourWalletComponent = () => {
                 <div className="connect-your-wallet__list">
 
                     {
-                        CONNECT_YOUR_WALLET_CARDS.map((item) => {
+                        CONNECT_YOUR_WALLET_CARDS.map((item:any, i: number) => {
                             return (
-                                <AnimationOnScroll animateIn="animate__fadeInUp" offset={150} duration={1.5} delay={1}>
+                                <AnimationOnScroll key={i} animateIn="animate__fadeInUp" offset={150} duration={1.5} delay={1}>
                                     <CardComponent
                                         hostClass={item.stateClass}
                                         children={item.caption}

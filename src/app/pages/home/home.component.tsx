@@ -19,7 +19,7 @@ const HomeComponent = () => {
                 <DesignUploadComponent/>
 
                 <article className="home__stiky">
-                    <AnimationOnScroll animateIn="animate__fadeInUp" offset={250} duration={1.5}>
+                    <AnimationOnScroll animateIn="animate__fadeInUp" offset={-250} duration={2.5} delay={21}>
                         <DownSteps/>
                     </AnimationOnScroll>
                 </article>

@@ -8,10 +8,9 @@
     position: relative;
     z-index: 1;
 
-    background: $light;
-
+    margin-top: calc(var(--header-height) * -1);
+    padding: var(--header-height) 0 0;
     border-radius: 0 0 rem(80) rem(80);
-
     background: $light;
 
     .own-website {
@@ -25,7 +24,5 @@
     z-index: 2;
 
     transform: translate(0, rem(-2));
-
-    //background: red;
   }
 }

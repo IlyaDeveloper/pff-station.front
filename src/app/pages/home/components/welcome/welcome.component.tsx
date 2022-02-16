@@ -1,7 +1,7 @@
 import './welcome.component.scss'
 import HeadingComponent from "../../../../components/ui/heading/heading.component";
 import {Swiper, SwiperSlide} from 'swiper/react';
-import {EffectCoverflow} from 'swiper';
+import {EffectCoverflow, Autoplay} from 'swiper';
 
 import image_welocme_1 from '../../../../../assets/images/swiper/s1.svg';
 import image_welocme_2 from '../../../../../assets/images/swiper/s2.svg';
@@ -45,8 +45,6 @@ const onSwiper = (swiper: any) => {
 }
 
 const WelcomeComponent = () => {
-
-
     return (
         <section className="welcome">
             <div className="container">
@@ -56,21 +54,27 @@ const WelcomeComponent = () => {
 
                 <div className="welcome__slider">
                     <Swiper
-                        modules={[EffectCoverflow]}
+                        modules={[EffectCoverflow, Autoplay]}
                         effect="coverflow"
                         coverflowEffect={COVER_FLOW_EFFECT}
                         grabCursor={true}
                         centeredSlides={true}
                         loop={true}
+                        autoplay={{
+                            // disableOnInteraction: false,
+                            delay: 1500,
+                            // stopOnLastSlide: true
+                        }}
                         spaceBetween={0}
                         slidesPerView={'auto'}
                         onSlideChange={slider}
                         onSwiper={onSwiper}
-                    >
+                        longSwipesRatio={0}
+                        longSwipes={false}>
 
-                        {WELCOME_SLIDER_IMAGES.map((item: any) => {
+                        {WELCOME_SLIDER_IMAGES.map((item: any, i: number) => {
                             return (
-                                <SwiperSlide>
+                                <SwiperSlide key={i}>
                                     <picture className="welcome__pic">
                                         <img src={item.image} alt={item.alt}/>
                                     </picture>
