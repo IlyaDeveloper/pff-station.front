@@ -3,6 +3,7 @@
 .welcome {
   @extend %section;
 
+  --heading-margin: rem(58) 0 0;
   --container-align-items: center;
 
   display: flex;
