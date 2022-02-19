@@ -1,6 +1,6 @@
 import './own-website.component.scss'
 import HeadingComponent from "../../../../components/ui/heading/heading.component";
-import PictureWrapComponent from "../../../../components/picture-wrap/picture-wrap.component";
+import PictureWrapComponent from "../../../../components/common/picture-wrap/picture-wrap.component";
 import GetStartedComponent from "../../../../components/ui/get-started/get-started.component";
 import {AnimationOnScroll} from "react-animation-on-scroll";
 

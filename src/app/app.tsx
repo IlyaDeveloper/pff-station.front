@@ -6,6 +6,9 @@ import FooterComponent from "./components/common/footer/footer.component";
 import TermsComponent from "./pages/terms/terms.component";
 import AgreementComponent from "./pages/agreement/agreement.component";
 import AuthComponent from "./pages/auth/auth.component";
+import DashboardComponent from "./pages/dashboard/dashboard.component";
+import ProfileComponent from "./pages/profile/profile.component";
+import TemplateEngineComponent from "./pages/template-engine/template-engine.component";
 
 const applyGetAccessOffset = () => {
     const emlBody: HTMLElement = document.getElementsByTagName('body')[0],
@@ -24,11 +27,13 @@ const app = (props: any) => {
     return (
         <main>
             <HeaderComponent/>
-
             <Routes>
                 <Route path="/" element={<HomeComponent/>}/>
                 <Route path="*" element={<Navigate to="/"/>}/>
                 <Route path="/auth" element={<AuthComponent/>}/>
+                <Route path="/dashboard" element={<DashboardComponent/>}/>
+                <Route path="/profile" element={<ProfileComponent/>}/>
+                <Route path="/template" element={<TemplateEngineComponent/>}/>
                 <Route path="/agreement" element={<AgreementComponent/>}/>
                 <Route path="/terms" element={<TermsComponent/>}/>
             </Routes>

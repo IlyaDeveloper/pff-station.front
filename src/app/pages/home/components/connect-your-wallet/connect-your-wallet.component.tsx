@@ -1,6 +1,6 @@
 import './connect-your-wallet.component.scss'
 import HeadingComponent from "../../../../components/ui/heading/heading.component";
-import CardComponent from "../../../../components/card/card.component";
+import CardComponent from "../../../../components/common/card/card.component";
 import {AnimationOnScroll} from "react-animation-on-scroll";
 
 const CONNECT_YOUR_WALLET_CARDS = [

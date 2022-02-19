@@ -1,6 +1,6 @@
 import './design-upload.component.scss';
 import HeadingComponent from "../../../../components/ui/heading/heading.component";
-import PictureWrapComponent from "../../../../components/picture-wrap/picture-wrap.component";
+import PictureWrapComponent from "../../../../components/common/picture-wrap/picture-wrap.component";
 import {AnimationOnScroll} from 'react-animation-on-scroll';
 
 import image1 from "../../../../../assets/images/img_1.jpg";
