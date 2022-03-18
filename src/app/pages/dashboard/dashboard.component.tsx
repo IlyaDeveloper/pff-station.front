@@ -2,7 +2,7 @@ import './dashboard.component.scss';
 
 const DashboardComponent = () => {
     return (
-        <div></div>
+        <div>dashboard</div>
     )
 }
 

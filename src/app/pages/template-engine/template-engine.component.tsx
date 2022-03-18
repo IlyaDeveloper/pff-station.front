@@ -1,4 +1,4 @@
-import './dashboard.component.scss';
+import './template-engine.component.scss';
 
 const TemplateEngineComponent = () => {
     return (
